@@ -29,7 +29,7 @@ It is possible to define custom actions for the LLM to trigger that can then be 
 2. The content of the `.json` needs to look like this:
   ```json
   {
-    "identifier": "npc_brawl", <- 
+    "identifier": "npc_brawl",
     "name": "Brawl",
     "description": "The keyword used by the NPC when they want to brawl with the player.",
     "key": "Brawl",
