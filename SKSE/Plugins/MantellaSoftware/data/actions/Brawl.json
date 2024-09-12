@@ -1,0 +1,12 @@
+{
+    "identifier": "npc_brawl",
+    "name": "Brawl",
+    "description": "The keyword used by the NPC when they want to brawl with the player.",
+    "key": "Brawl",
+    "prompt": "If the speaking NPC prefers to settle a dispute with the player by a fist fight lead your reply with '{key}:'",
+    "is-interrupting": false,
+    "one-on-one": true,
+    "multi-npc": false,
+    "radiant": false,
+    "info-text": "The NPC wants to beat up the player!"
+}
