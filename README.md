@@ -41,15 +41,15 @@ It is possible to define custom actions for the LLM to trigger that can then be 
     "info-text": "The NPC wants to beat up the player!"
   }
   ```
-  - "identifier": This is the identifier of your action. The name of the event that will be triggered is the action prefix from 'MantellaInterface.psc' + this identifier
-  - "name": Used in the Mantella UI to identify your action to the user in a human readable format
-  - "description": Used in the Mantella UI to describe your action
-  - "key": This is the default keyword the LLM is gonna use to trigger your action. Can be overriden by the user in the langauge settings
-  - "prompt": The action instruction added to the prompt. '{key}' will be replaced by the key.
-  - "is-interrupting": Is this an interrupting action? If yes the generation of the LLM will be stopped after the sentence it is in
-  - "one-on-one": Can be triggered in a One-on-One conversation (PC + NPC)
-  - "multi-npc": Can be triggered in a multi-npc conversation (PC + multiple NPCs)
-  - "radiant": Can be triggered in a radiant conversation (multiple NPCs, no PC)
-  - "info-text": Info message logged in 'Mantella.exe's console when the action is triggered.
+  - `identifier`: This is the identifier of your action. The name of the event that will be triggered is the action prefix from 'MantellaInterface.psc' + this identifier
+  - `name`: Used in the Mantella UI to identify your action to the user in a human readable format
+  - `description`: Used in the Mantella UI to describe your action
+  - `key`: This is the default keyword the LLM is gonna use to trigger your action. Can be overriden by the user in the langauge settings
+  - `prompt`: The action instruction added to the prompt. '{key}' will be replaced by the key.
+  - `is-interrupting`: Is this an interrupting action? If yes the generation of the LLM will be stopped after the sentence it is in
+  - `one-on-one`: Can be triggered in a One-on-One conversation (PC + NPC)
+  - `multi-npc`: Can be triggered in a multi-npc conversation (PC + multiple NPCs)
+  - `radiant`: Can be triggered in a radiant conversation (multiple NPCs, no PC)
+  - `info-text`: Info message logged in 'Mantella.exe's console when the action is triggered.
 3. Now Mantella will trigger a ModEvent called `MantellaConversation_Action_npc_brawl` (prefix + identifier from 2.)
 4. Register as listener for the ModEvent like [here](https://github.com/Leidtier/MantellaBrawl/blob/ae9565be4f1e5ae60cb77293658dc7d36ace74f6/Scripts/Source/MantellaBrawl.psc#L7-L13) (you only need to register to the events you are interested in)
